@@ -1,8 +1,10 @@
 # laravel-bbnplace
 A Laravel 5 Package for BBN Place Sms Messenger <br/>
-NOTE: This package is currently is development mode!
+NOTE: This package is currently in development mode! <br/>
 
-send SMS from Laravel blade template
+Visit <a href="http://sms.bbnplace.com" >BBN Place sms </a> to create account <br/>
+
+1. To Send SMS from Laravel blade template
 ```
 return SmsMessenger::send('emails.sms', ['name' => 'Samuel'], function($sms){
     $sms->mobile = '07063317344';
@@ -13,7 +15,7 @@ return SmsMessenger::send('emails.sms', ['name' => 'Samuel'], function($sms){
 });
 ```
 
-Send a plain sms
+2. Send a plain sms
 ```
 return SmsMessenger::plain('I am on my way now', function($sms){
     $sms->mobile = '07063317344';
@@ -23,7 +25,7 @@ return SmsMessenger::plain('I am on my way now', function($sms){
 });
 ```
 
-Schedule SMS
+3. Schedule SMS
 ```
 return SmsMessenger::schedule('emails.sms', ['name' => 'Samuel'], function($sms){
 
@@ -38,7 +40,7 @@ return SmsMessenger::schedule('emails.sms', ['name' => 'Samuel'], function($sms)
 });
 ```
 
-Check SMS Balance
+4. Check SMS Balance
 ```
 (int) SmsMessenger::checkBalance();
 ```
