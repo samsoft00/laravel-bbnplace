@@ -1,4 +1,5 @@
 # laravel-bbnplace
+<img src="http://www1.bbnplace.com/wp-content/uploads/2014/04/messaging-partnership.jpg" /> <br/>
 A Laravel 5 Package for BBN Place Sms Messenger <br/>
 NOTE: This package is currently in development mode! <br/>
 
