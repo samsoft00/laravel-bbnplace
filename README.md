@@ -7,7 +7,7 @@ Visit <a href="http://sms.bbnplace.com" >BBN Place sms </a> to create account <b
 
 1. To Send SMS from Laravel blade template
 ```
-return SmsMessenger::send('emails.sms', ['name' => 'Samuel'], function($sms){
+SmsMessenger::send('emails.sms', ['name' => 'Samuel'], function($sms){
     $sms->mobile = '07063317344';
     $sms->sender = 'Samsoft';
     $sms->isflash = false;//optional
@@ -18,7 +18,7 @@ return SmsMessenger::send('emails.sms', ['name' => 'Samuel'], function($sms){
 
 2. Send a plain sms
 ```
-return SmsMessenger::plain('I am on my way now', function($sms){
+SmsMessenger::plain('I am on my way now', function($sms){
     $sms->mobile = '07063317344';
     $sms->sender = 'Samsoft';
     $sms->isflash = false;//optional
@@ -28,7 +28,7 @@ return SmsMessenger::plain('I am on my way now', function($sms){
 
 3. Schedule SMS
 ```
-return SmsMessenger::schedule('emails.sms', ['name' => 'Samuel'], function($sms){
+SmsMessenger::schedule('emails.sms', ['name' => 'Samuel'], function($sms){
 
     $sms->sender = 'Samsoft';
     $sms->mobile = '07063317344';
