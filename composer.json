@@ -1,0 +1,22 @@
+{
+    "name": "samsoft00/laravel-bbnplace",
+    "description": "A Laravel 5 Package for BBN Place Sms Messenger",
+    "keywords": ["laravel","snappy", "pdf", "image", "wkhtmltopdf", "wkhtmltoimage"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oyewole Abayomi Samuel",
+            "email": "oyewoleabayomi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.1.0",
+        "illuminate/support": "5.0.x|5.1.x|5.2.x"
+    },
+    "autoload":{
+        "psr-4":{
+            "Samsoft00\\Bbnplace\\": "src/"
+        }
+    }
+}
